@@ -1,8 +1,8 @@
-from banco import Banco
+from .banco import Banco
 import datetime as dt
 from inspect import stack
-from conta import ContaBancaria
-from pessoas import Funcionario
+from .conta import ContaBancaria
+from .pessoas import Funcionario
 
 
 class Agencia:

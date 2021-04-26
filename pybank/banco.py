@@ -1,6 +1,4 @@
-from pessoas import Funcionario
-from inspect import stack
-from agencia import Agencia
+from .pessoas import Funcionario
 
 
 class Banco:
@@ -18,9 +16,9 @@ class Banco:
     def registros(self):
         return self.__registros
 
-    def add_agencia(self, agencia: Agencia):
-        self.__agencias.append(agencia)
-        self._add_registro(stack()[0][3], agencia.num)
+    @registros.setter
+    def registros(self, value):
+        self.__registros.append(value)
 
     def gerador_numero_conta(self):
         n = int(self.__ultima_conta[: self.__ultima_conta.index('-')])

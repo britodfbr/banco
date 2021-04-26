@@ -1,4 +1,4 @@
-from pessoas import Cliente
+from .pessoas import Cliente
 
 
 class ContaBancaria:

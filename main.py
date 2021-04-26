@@ -2,21 +2,10 @@
 # -*- coding: utf-8 -*-
 __author__ = '@britodfbr'
 import datetime as dt
-from pessoas import Funcionario, Cliente
-from banco import Banco
-from agencia import Agencia, AgenciaVirtual, AgenciaPrimium
-from conta import ContaCorrente
-
-
-
-
-
-
-
-
-
-
-
+from pybank.pessoas import Funcionario, Cliente
+from pybank.banco import Banco
+from pybank.agencia import Agencia, AgenciaVirtual, AgenciaPrimium
+from pybank.conta import ContaCorrente
 
 
 def run():
